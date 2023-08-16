@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 76, 255);
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+      );
+      background-size: 500% auto;
+      animation: animatedGradient 3s ease-in-out infinite;
+      animation-play-state: running;
+}
+
+#header:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animatedGradient {
+    0%{
+
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.avatar-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 20px 20px;
+    border: none;
+}
+
+.my-name {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.header-links {
+    display: flex;
+    margin-top: 30px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.my-link {
+    font-size: 2.3rem;
+    color: white;
+    margin: 0 30px;
+}
+
+.about-me {
+    display: flex;
+    font-size: 3rem;
+    color: #333;
+    margin: 100px 0 50px 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.introduce {
+    padding: 0 30px;
+}
+
+.info {
+    font-size: 2rem;
+    margin: 5px 50px;
+    list-style-type: none;
+    line-height: 3.3rem;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(199, 242, 242);
+}
+
+#project h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.project {
+    display: flex;
+    width: 70%;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.project-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    padding-right: 30px;
+    background: transparent;
+}
+
+.project-desc {
+    font-size: 3rem;
+    flex-wrap: wrap;
+}
+
+.project-desc > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-desc > ul > li {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.project-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 34);
+    padding: 5px 20px;
+    margin-right: 15px;
+}
+
+#container-contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('./images/39.png');
+    color: white;
+    margin: 30px auto;
+    padding: auto;
+    border-radius: 10px;
+}
+
+.contact-info {
+    font-size: 3rem;
+}
+
+.contact-info h2 {
+    font-size: 3rem;
+}
+
+.contact-info li {
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 2.5rem;
+}
+
+.contact-link {
+    color: black;
+    font-size: 3rem;
+}
+
+.contact-social {
+    padding: 0 20px;
+}
+
+.contact-social i {
+    font-size: 3rem;
+}
+
+.container-formActionGet {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
+
+.formActionGet {
+    height: 300px;
+    width: 500px;
+    background-color: blueviolet;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.formActionGet-input {
+    padding: 20px;
+    margin: 20px 0 0 10px;
+    height: 25px;
+    width: 90%;
+    border: none;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.formActionGet-submit {
+    height: 40px;
+    width: 100px;
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    margin: 10px 0 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formActionGet-submit:hover {
+    cursor: pointer;
+    background-color: #2F5A78;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.form label {
+    font-size: 2rem;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.name-user {
+    height: 30px;
+    width: 80%;
+}
+
+.skill {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    height: 300px;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+table th {
+    background-color: #2F5a78;
+    color: white;
+    font-size: 2.5rem;
+}
+
+td, th {
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    font-size: 2rem;
+}
+
