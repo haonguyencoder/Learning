@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Slider Images</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -24,42 +24,12 @@
             <li><a class="my-link" href="slider.php">Slider</a></li>
         </ul>
     </header>
-    <div class="about-me">
-        <ul class="introduce">
-            <li class="info">Hello!</li>
-            <li class="info">I am Hao. I am seft-taught programmer.</li>
-        </ul>
+    <div class="container-slider">
+        <button onclick="prev()"> Prev </button>
+        <img id="slider" src="./images/10.jpg" width="600px" height="300px" />
+        <button onclick="next()"> Next </button>
     </div>
-    <div class="skill">
-      <table>
-        <th>Skill</th>
-        <th>Level</th>
-        <tr>
-            <td>HTML</td>
-            <td>Good</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Good</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td>React</td>
-            <td>Normal</td>
-        </tr>
-        <tr>
-            <td>PHP</td>
-            <td>Good</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td>Good</td>
-        </tr>
-      </table>
-    </div>
+
 </body>
 <script src="https://kit.fontawesome.com/4fa07de7ff.js" crossorigin="anonymous"></script>
 

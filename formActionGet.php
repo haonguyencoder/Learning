@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Input Get Method PHP</title>
+  <link rel="icon" type="image/x-icon" sizes="250x250" href="./images/favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,6 +20,7 @@
       <li><a class="my-link" href="project.php">Projects</a></li>
       <li><a class="my-link" href="contact.php">Contact</a></li>
       <li><a class="my-link" href="formActionGet.php">Form</a></li>
+      <li><a class="my-link" href="slider.php">Slider</a></li>
     </ul>
   </header>
   <div class="container-formActionGet">

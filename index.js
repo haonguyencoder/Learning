@@ -1,36 +1,40 @@
-// hour = 0;
-// let hour = parseInt(readLine(), 10);
+//Slider Images
+var images = [
+  "./images/10.jpg",
+  "./images/11.jpg",
+  "./images/12.jpg",
+  "./images/13.jpg",
+  "./images/15.jpg",
+  "./images/16.jpg",
+  "./images/18.jpg",
+  "./images/19.jpg",
+  "./images/21.jpg",
+  "./images/22.jpg",
+  "./images/23.jpg",
+  "./images/24.jpg",
+  "./images/27.jpg",
+  "./images/28.jpg",
+  "./images/29.jpg",
+  "./images/30.jpg",
+  "./images/31.jpg",
+  "./images/32.jpg",
+];
+var num = 0;
 
- //your code goes here
-// let countHour = (hour <= 12) ? "am" : "pm";
-// console.log(countHour);
-
-/*let i = 1;
-
-do {
-    console.log("Hey");
-    i++;
+function next() {
+  var slider = document.getElementById("slider");
+  num++;
+  if (num >= images.length) {
+    num = 0;
+  }
+  slider.src = images[num];
 }
 
-while (i < 5);
-i();
-
-function login() {
-    console.log("Hello!");
-}*/
-
-let width = parsenInt(readLine(), 10);
-let length = parsenInt(readLine(), 10);
-
-function area(x, y) {
-    return x * y;
+function prev() {
+  var slider = document.getElementById("slider");
+  num--;
+  if (num < 0) {
+    num = images.length - 1;
+  }
+  slider.src = images[num];
 }
-
-console.log(area);
-
-let i = 1;
-do {
-    console.log("Hey");
-    i++;
-}
-while(i < 5);
